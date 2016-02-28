@@ -18,3 +18,11 @@ If using `'use strict';` it's `undefined` other wise *global* `this`, `Window` i
 ```
 
 However, in ES2015 arrow function, `this` is the lexical `this`.
+
+### `position:relative`
+
+* `position:relative` means the `position` of the `element` is **relative to itself**
+* if there are no associated, `left`, `right`, `top`, `bottom`, `position:relative` does not have any effect for the element's layout
+* unlike `position:absolute|fixed`, the element is not taken out of the flow.
+* [codepen example](http://codepen.io/anon/pen/vGYPLM)
+
