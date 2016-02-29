@@ -25,4 +25,10 @@ However, in ES2015 arrow function, `this` is the lexical `this`.
 * if there are no associated, `left`, `right`, `top`, `bottom`, `position:relative` does not have any effect for the element's layout
 * unlike `position:absolute|fixed`, the element is not taken out of the flow.
 * [codepen example](http://codepen.io/anon/pen/vGYPLM)
+* 
 
+### `==` equality & value conversion in javascript
+
+* in `==` both the values are converted into a common type prior comparison.
+* for `number == string` or `string == number` `string` is convereted to `number`
+* more conversion rules can be found [here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Equality_comparisons_and_sameness#Loose_equality_using)
