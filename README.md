@@ -25,7 +25,6 @@ However, in ES2015 arrow function, `this` is the lexical `this`.
 * if there are no associated, `left`, `right`, `top`, `bottom`, `position:relative` does not have any effect for the element's layout
 * unlike `position:absolute|fixed`, the element is not taken out of the flow.
 * [codepen example](http://codepen.io/anon/pen/vGYPLM)
-* 
 
 ### `==` equality & value conversion in javascript
 
