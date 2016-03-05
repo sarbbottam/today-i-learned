@@ -37,3 +37,40 @@ However, in ES2015 arrow function, `this` is the lexical `this`.
 * `:nth-child(2n + 1)` is same as `:nth-child(odd)`
 * `:nth-child(2n)` is same as `:nth-child(even)`
 
+### `{this.props.children}` pass a react component to another 
+
+```js
+export default class Dumb extends React.Component {
+  render() {
+    return (
+      <div>
+        Hi from Dumb
+        {this.props.children}
+      </div>
+    );
+  }
+}
+
+export default class AnotherDumb extends React.Component {
+  render() {
+    return <span>Hello from AnotherDumb</span>;
+  }
+}
+
+ReactDOMServer.renderToStaticMarkup(<Dumb><AnotherDumb /></Dumb>);
+// or
+ReactDOMServer.renderToStaticMarkup(
+  React.createElement(
+    Dumb, {}, React.createElement(AnotherDumb)
+  )
+);
+```
+
+```html
+<div>
+  Hi from Dumb
+  <span>
+    Hello from AnotherDumb
+  </span>
+</div>
+```
