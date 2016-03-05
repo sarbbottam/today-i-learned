@@ -31,3 +31,9 @@ However, in ES2015 arrow function, `this` is the lexical `this`.
 * in `==` both the values are converted into a common type prior comparison.
 * for `number == string` or `string == number` `string` is convereted to `number`
 * more conversion rules can be found [here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Equality_comparisons_and_sameness#Loose_equality_using)
+
+### `:nth-child(odd)` & `:nth-child(even)`
+
+* `:nth-child(2n + 1)` is same as `:nth-child(odd)`
+* `:nth-child(2n)` is same as `:nth-child(even)`
+
