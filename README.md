@@ -74,3 +74,13 @@ ReactDOMServer.renderToStaticMarkup(
   </span>
 </div>
 ```
+
+### use `Host` to identify which `id_rsa.pub` is to be used.
+
+```sh
+Host *.example.one*
+	IdentityFile 	%d/.ssh/id_rsa_example_one.pub
+
+Host *.example.two*
+	IdentityFile 	%d/.ssh/id_rsa_example_two.pub
+```
