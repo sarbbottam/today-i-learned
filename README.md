@@ -84,3 +84,10 @@ Host *.example.one*
 Host *.example.two*
 	IdentityFile 	%d/.ssh/id_rsa_example_two.pub
 ```
+
+### `defer` & `async` in `<script>`
+
+* when `async` attribute is present, the script is fetched w/o blocking HTML parsing and executed as soon as it is available. While executing the HTML parsing will be blocked.
+* when `defer` attribute is present, w/o `async` the script will be fetched w/o blocking HTML parsing and only executed, when the page has finished parsing. 
+* without `async` or `defer`, the script is fetched blocking the HTML parsing and executed immediately.
+* When `async` and `defer` both are present `defer` serves as a fall back for the browsers that don't understand `async`.
