@@ -91,3 +91,12 @@ Host *.example.two*
 * when `defer` attribute is present, w/o `async` the script will be fetched w/o blocking HTML parsing and only executed, when the page has finished parsing. 
 * without `async` or `defer`, the script is fetched blocking the HTML parsing and executed immediately.
 * When `async` and `defer` both are present `defer` serves as a fall back for the browsers that don't understand `async`.
+
+### checkbox - intermediate state
+
+[intermediate state can only be set with javascript](https://css-tricks.com/indeterminate-checkboxes/) 
+
+```js
+var checkbox = document.getElementById("some-checkbox");
+checkbox.indeterminate = true;
+```
