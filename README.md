@@ -100,3 +100,38 @@ Host *.example.two*
 var checkbox = document.getElementById("some-checkbox");
 checkbox.indeterminate = true;
 ```
+
+### `patch` command
+
+`patch < patch-file`
+
+for example 
+
+```
+吽 echo hi\\nhello > 1.txt
+
+吽 echo Hi\\nHello > 2.txt
+
+吽 diff -u 1.txt 2.txt > patch.txt
+[zsh] sabandyo at sabandyo-mn1 in ~ 
+
+吽 cat 1.txt
+hi
+hello
+
+吽 cat patch.txt 
+--- 1.txt	2016-03-24 18:56:38.000000000 -0700
++++ 2.txt	2016-03-24 18:56:32.000000000 -0700
+@@ -1,2 +1,2 @@
+-hi
+-hello
++Hi
++Hello
+
+吽 patch < patch.txt 
+patching file 1.txt
+
+吽 cat 1.txt        
+Hi
+Hello
+```
