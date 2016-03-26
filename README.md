@@ -135,3 +135,17 @@ patching file 1.txt
 Hi
 Hello
 ```
+
+### `[` vs `[[`
+
+* `[[`
+  * is more powerful
+  * is only supported in modern `shell` like `bash`, `zsh`
+  * is not available in `POSIX shells`
+  * is safer
+  * use `#!/bin/bash` or `#!/bin/zsh` when using `[[`
+  
+* `[`
+  * `var`s containing `spaces` nedds to be wrapped in `"`
+
+More information can be found at this [StackOverflow answer](http://stackoverflow.com/questions/13542832/what-is-the-difference-between-single-and-double-square-brackets-in-bash#answer-31366734)
