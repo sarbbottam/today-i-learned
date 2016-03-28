@@ -149,3 +149,11 @@ Hello
   * `var`s containing `spaces` nedds to be wrapped in `"`
 
 More information can be found at this [StackOverflow answer](http://stackoverflow.com/questions/13542832/what-is-the-difference-between-single-and-double-square-brackets-in-bash#answer-31366734)
+
+### modify an older (not latest) commit message
+
+* `git rebase -i HEAD~10` for example if the 10th commit from the latest needs to be modified
+* replace `pick` with `edit` for the corresponding commit
+* `git commit --amend`
+* update the commit message
+* `git rebase --continue
