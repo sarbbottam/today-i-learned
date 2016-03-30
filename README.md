@@ -157,3 +157,9 @@ More information can be found at this [StackOverflow answer](http://stackoverflo
 * `git commit --amend`
 * update the commit message
 * `git rebase --continue
+
+### `matching` vs `current` `push.default` in `git`
+
+* `matching` means `git push` will `push` **all local branches**, to the ones with the same name on the remote. This makes it easy to accidentally push a non-intended branch.
+
+* `simple` means `git push` will push **only the current branch**, to the one that `git pull` would pull from, and also checks that their names match. This is a more intuitive behavior, which is why the default is getting changed to this.
