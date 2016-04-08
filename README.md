@@ -165,3 +165,9 @@ More information can be found at this [StackOverflow answer](http://stackoverflo
 * `simple` means `git push` will push **only the current branch**, to the one that `git pull` would pull from, and also checks that their names match. This is a more intuitive behavior, which is why the default is getting changed to this.
 
 ### `node filename` is sufficient `.js` is not required
+
+### `<button>` is better than `<a>` for custom widgets
+
+* `<a> must be accompanied with `href` `attribute`, otherwise `click` handler would not listen to `space`/`enter` press
+* for `<a>`, `e.prevenDefault()` must be used in the `click` handler
+* both of them need to have widget `role` attribute, if not serving the native semantic
