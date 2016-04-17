@@ -171,3 +171,11 @@ More information can be found at this [StackOverflow answer](http://stackoverflo
 * `<a> must be accompanied with `href` `attribute`, otherwise `click` handler would not listen to `space`/`enter` press
 * for `<a>`, `e.prevenDefault()` must be used in the `click` handler
 * both of them need to have widget `role` attribute, if not serving the native semantic
+
+### Vim - save a file with `sudo`
+
+_I haven't learnt this today, but I keep forgetting it_
+
+```
+w !sudo tee %
+```
