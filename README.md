@@ -168,7 +168,10 @@ More information can be found at this [StackOverflow answer](http://stackoverflo
 
 ### `<button>` is better than `<a>` for custom widgets
 
-* `<a> must be accompanied with `href` `attribute`, otherwise `click` handler would not listen to `space`/`enter` press
+* `<a> must be accompanied with `href` `attribute`
+  * otherwise `click` handler would not listen to `enter` press
+  * and it will not be focusable with `tab`
+* `<a>` does not respect `space` press (at least in chrome/safari/firefox on Mac)
 * for `<a>`, `e.prevenDefault()` must be used in the `click` handler
 * both of them need to have widget `role` attribute, if not serving the native semantic
 
