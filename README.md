@@ -175,6 +175,8 @@ More information can be found at this [StackOverflow answer](http://stackoverflo
 * for `<a>`, `e.prevenDefault()` must be used in the `click` handler
 * both of them need to have widget `role` attribute, if not serving the native semantic
 
+Refer this [CodePen](http://codepen.io/anon/pen/aNKWBd?editors=1111)
+
 ### Vim - save a file with `sudo`
 
 _I haven't learnt this today, but I keep forgetting it_
