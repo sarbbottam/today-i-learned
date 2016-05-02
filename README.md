@@ -184,3 +184,8 @@ _I haven't learnt this today, but I keep forgetting it_
 ```
 w !sudo tee %
 ```
+
+### `document.createElementNS`
+
+`document.createElementNS(namespaceURI, qualifiedName);` creates an element with the specified namespace URI and qualified name.
+For example `document.createElementNS('http://www.w3.org/2000/svg', 'svg')`
