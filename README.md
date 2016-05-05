@@ -189,3 +189,42 @@ w !sudo tee %
 
 `document.createElementNS(namespaceURI, qualifiedName);` creates an element with the specified namespace URI and qualified name.
 For example `document.createElementNS('http://www.w3.org/2000/svg', 'svg')`
+
+### Override a node module's function
+
+```js
+// fs.js
+const fs = require('fs');
+const readFileSync = fs.readFileSync;
+
+fs.readFileSync = (...args) => {
+  const content =  readFileSync.apply(null, args);
+  console.log(`read ${args[0]} in sync`)
+  console.log(`constent of ${args[0]}\n----------------------\n${content}`);
+  return content;
+}
+```
+
+```js
+// app.js
+const fs = require('fs');
+require('./fs');
+
+fs.readFileSync('./fs.js', 'utf-8');
+```
+```
+$ node app.js
+read ./fs.js in sync
+constent of ./fs.js
+----------------------
+const fs = require('fs');
+const readFileSync = fs.readFileSync;
+
+fs.readFileSync = (...args) => {
+  const content =  readFileSync.apply(null, args);
+  console.log(`read ${args[0]} in sync`)
+  console.log(`constent of ${args[0]}\n----------------------\n${content}`);
+  return content;
+}
+```
+
