@@ -228,3 +228,13 @@ fs.readFileSync = (...args) => {
 }
 ```
 
+### `npm ls <package-name>` to list the dependency tree
+
+```sh
+$ npm ls trim
+...
+└─┬ doctoc@1.0.0
+  └─┬ markdown-to-ast@3.0.7
+    └─┬ mdast@1.2.0
+      └── trim@0.0.1
+```
