@@ -238,3 +238,7 @@ $ npm ls trim
     └─┬ mdast@1.2.0
       └── trim@0.0.1
 ```
+
+### `:after` & `:before` can not be used for `input` element
+
+[It's not meant to be used on replaced elements such as form elements (inputs) and image elements.](http://stackoverflow.com/questions/2587669/can-i-use-the-after-pseudo-element-on-an-input-field#answer-2591460)
