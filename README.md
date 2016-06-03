@@ -242,3 +242,15 @@ $ npm ls trim
 ### `:after` & `:before` can not be used for `input` element
 
 [It's not meant to be used on replaced elements such as form elements (inputs) and image elements.](http://stackoverflow.com/questions/2587669/can-i-use-the-after-pseudo-element-on-an-input-field#answer-2591460)
+
+### start a `ordered list` from a desired ordinal value
+
+use [`value`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/li#Attributes) and [`start`](https://html.spec.whatwg.org/multipage/semantics.html#attr-ol-start) attribute
+
+```html
+<ol>
+  <li start="4" value="4">item 4</li>
+  <li>item 5</li>
+  <li>item 6</li>
+</ol>
+```
