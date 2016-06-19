@@ -262,3 +262,7 @@ use [`value`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/li#Attri
 ### `outline-offset`
 
 `outline-offset` is a thing! and It can have `-ve` value
+
+### `border` and `outline` styles can not be animated
+
+This is by design, read more at [this stackoverflow answer](http://stackoverflow.com/questions/14385422/why-dont-css3-animations-work-on-outline-with-default-none#answer-14386672)
