@@ -258,3 +258,7 @@ use [`value`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/li#Attri
 ### `!important` in a keyframe
 
 [declarations in a keyframe that are qualified with !important are ignored](https://developer.mozilla.org/en-US/docs/Web/CSS/@keyframes#!important_in_a_keyframe)
+
+### `outline-offset`
+
+`outline-offset` is a thing! and It can have `-ve` value
