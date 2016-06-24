@@ -275,7 +275,7 @@ This is by design, read more at [this stackoverflow answer](http://stackoverflow
 document.addEventListener('click', () => {console.log(e.target, 'is clicked')}); // logs the element clicked
 document.addEventListener('focus', () => {console.log(e.target)}); // however, this does not work
 document.addEventListener('focus', () => {console.log(e.target)}, true); // but, this work
-``js
+```
 
 Note the `true` flag passed as the 3rd argument, in the last statement. `true` identifies it to be `capture` phase.
 
