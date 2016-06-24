@@ -266,3 +266,15 @@ use [`value`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/li#Attri
 ## `border` and `outline` styles can not be animated
 
 This is by design, read more at [this stackoverflow answer](http://stackoverflow.com/questions/14385422/why-dont-css3-animations-work-on-outline-with-default-none#answer-14386672)
+
+## listen to `focus` and `blur` during capture phase
+
+`focus` & `blur` event don't bubble up. So event listener attached to the ancestor can not listen to `focus` and `blur` event on its `descendant` as it can for `click` event.
+
+```js
+document.addEventListener('click', () => {console.log(e.target, 'is clicked')}); // logs the element clicked
+document.addEventListener('focus', () => {console.log(e.target)}); // however, this does not work
+document.addEventListener('focus', () => {console.log(e.target)}, true); // but, this work
+``js
+
+Note the `true` flag passed as the 3rd argument, in the last statement. `true` identifies it to be `capture` phase.
