@@ -278,3 +278,7 @@ document.addEventListener('focus', () => {console.log(e.target)}, true); // but,
 ``js
 
 Note the `true` flag passed as the 3rd argument, in the last statement. `true` identifies it to be `capture` phase.
+
+## remove all the untracked files
+
+`git clean -fd` will remove all the untracked files
