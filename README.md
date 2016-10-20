@@ -282,3 +282,7 @@ Note the `true` flag passed as the 3rd argument, in the last statement. `true` i
 ## remove all the untracked files
 
 `git clean -fd` will remove all the untracked files
+
+## element.closest()
+
+Native [method](https://developer.mozilla.org/en-US/docs/Web/API/Element/closest), [not jQuery](https://api.jquery.com/closest/), that returns the closest ancestor of the current element.
