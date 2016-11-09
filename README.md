@@ -1,3 +1,37 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [today-i-learned](#today-i-learned)
+  - [`this` in javascript anonymous function](#this-in-javascript-anonymous-function)
+  - [`position:relative`](#positionrelative)
+  - [`==` equality & value conversion in javascript](#-equality--value-conversion-in-javascript)
+  - [`:nth-child(odd)` & `:nth-child(even)`](#nth-childodd--nth-childeven)
+  - [`{this.props.children}` pass a react component to another](#thispropschildren-pass-a-react-component-to-another)
+  - [use `Host` to identify which `id_rsa.pub` is to be used.](#use-host-to-identify-which-id_rsapub-is-to-be-used)
+  - [`defer` & `async` in `<script>`](#defer--async-in-script)
+  - [checkbox - intermediate state](#checkbox---intermediate-state)
+  - [`patch` command](#patch-command)
+  - [`[` vs `[[`](#-vs-)
+  - [modify an older (not latest) commit message](#modify-an-older-not-latest-commit-message)
+  - [`matching` vs `current` `push.default` in `git`](#matching-vs-current-pushdefault-in-git)
+  - [`node filename` is sufficient `.js` is not required](#node-filename-is-sufficient-js-is-not-required)
+  - [`<button>` is better than `<a>` for custom widgets](#button-is-better-than-a-for-custom-widgets)
+  - [Vim - save a file with `sudo`](#vim---save-a-file-with-sudo)
+  - [`document.createElementNS`](#documentcreateelementns)
+  - [Override a node module's function](#override-a-node-modules-function)
+  - [`npm ls <package-name>` to list the dependency tree](#npm-ls-package-name-to-list-the-dependency-tree)
+  - [`:after` & `:before` can not be used for `input` element](#after--before-can-not-be-used-for-input-element)
+  - [start a `ordered list` from a desired ordinal value](#start-a-ordered-list-from-a-desired-ordinal-value)
+  - [`!important` in a keyframe](#important-in-a-keyframe)
+  - [`outline-offset`](#outline-offset)
+  - [`border` and `outline` styles can not be animated](#border-and-outline-styles-can-not-be-animated)
+  - [listen to `focus` and `blur` during capture phase](#listen-to-focus-and-blur-during-capture-phase)
+  - [remove all the untracked files](#remove-all-the-untracked-files)
+  - [element.closest()](#elementclosest)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # today-i-learned
 
 Today, I learned ...
