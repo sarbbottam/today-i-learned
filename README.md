@@ -1,40 +1,38 @@
-<!-- START doctoc generated TOC please keep comment here to allow auto update -->
-<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
-
-- [today-i-learned](#today-i-learned)
-  - [`this` in javascript anonymous function](#this-in-javascript-anonymous-function)
-  - [`position:relative`](#positionrelative)
-  - [`==` equality & value conversion in javascript](#-equality--value-conversion-in-javascript)
-  - [`:nth-child(odd)` & `:nth-child(even)`](#nth-childodd--nth-childeven)
-  - [`{this.props.children}` pass a react component to another](#thispropschildren-pass-a-react-component-to-another)
-  - [use `Host` to identify which `id_rsa.pub` is to be used.](#use-host-to-identify-which-id_rsapub-is-to-be-used)
-  - [`defer` & `async` in `<script>`](#defer--async-in-script)
-  - [checkbox - intermediate state](#checkbox---intermediate-state)
-  - [`patch` command](#patch-command)
-  - [`[` vs `[[`](#-vs-)
-  - [modify an older (not latest) commit message](#modify-an-older-not-latest-commit-message)
-  - [`matching` vs `current` `push.default` in `git`](#matching-vs-current-pushdefault-in-git)
-  - [`node filename` is sufficient `.js` is not required](#node-filename-is-sufficient-js-is-not-required)
-  - [`<button>` is better than `<a>` for custom widgets](#button-is-better-than-a-for-custom-widgets)
-  - [Vim - save a file with `sudo`](#vim---save-a-file-with-sudo)
-  - [`document.createElementNS`](#documentcreateelementns)
-  - [Override a node module's function](#override-a-node-modules-function)
-  - [`npm ls <package-name>` to list the dependency tree](#npm-ls-package-name-to-list-the-dependency-tree)
-  - [`:after` & `:before` can not be used for `input` element](#after--before-can-not-be-used-for-input-element)
-  - [start a `ordered list` from a desired ordinal value](#start-a-ordered-list-from-a-desired-ordinal-value)
-  - [`!important` in a keyframe](#important-in-a-keyframe)
-  - [`outline-offset`](#outline-offset)
-  - [`border` and `outline` styles can not be animated](#border-and-outline-styles-can-not-be-animated)
-  - [listen to `focus` and `blur` during capture phase](#listen-to-focus-and-blur-during-capture-phase)
-  - [remove all the untracked files](#remove-all-the-untracked-files)
-  - [element.closest()](#elementclosest)
-
-<!-- END doctoc generated TOC please keep comment here to allow auto update -->
-
 # today-i-learned
 
 Today, I learned ...
+
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+- [`this` in javascript anonymous function](#this-in-javascript-anonymous-function)
+- [`position:relative`](#positionrelative)
+- [`==` equality & value conversion in javascript](#-equality--value-conversion-in-javascript)
+- [`:nth-child(odd)` & `:nth-child(even)`](#nth-childodd--nth-childeven)
+- [`{this.props.children}` pass a react component to another](#thispropschildren-pass-a-react-component-to-another)
+- [use `Host` to identify which `id_rsa.pub` is to be used.](#use-host-to-identify-which-id_rsapub-is-to-be-used)
+- [`defer` & `async` in `<script>`](#defer--async-in-script)
+- [checkbox - intermediate state](#checkbox---intermediate-state)
+- [`patch` command](#patch-command)
+- [`[` vs `[[`](#-vs-)
+- [modify an older (not latest) commit message](#modify-an-older-not-latest-commit-message)
+- [`matching` vs `current` `push.default` in `git`](#matching-vs-current-pushdefault-in-git)
+- [`node filename` is sufficient `.js` is not required](#node-filename-is-sufficient-js-is-not-required)
+- [`<button>` is better than `<a>` for custom widgets](#button-is-better-than-a-for-custom-widgets)
+- [Vim - save a file with `sudo`](#vim---save-a-file-with-sudo)
+- [`document.createElementNS`](#documentcreateelementns)
+- [Override a node module's function](#override-a-node-modules-function)
+- [`npm ls <package-name>` to list the dependency tree](#npm-ls-package-name-to-list-the-dependency-tree)
+- [`:after` & `:before` can not be used for `input` element](#after--before-can-not-be-used-for-input-element)
+- [start a `ordered list` from a desired ordinal value](#start-a-ordered-list-from-a-desired-ordinal-value)
+- [`!important` in a keyframe](#important-in-a-keyframe)
+- [`outline-offset`](#outline-offset)
+- [`border` and `outline` styles can not be animated](#border-and-outline-styles-can-not-be-animated)
+- [listen to `focus` and `blur` during capture phase](#listen-to-focus-and-blur-during-capture-phase)
+- [remove all the untracked files](#remove-all-the-untracked-files)
+- [element.closest()](#elementclosest)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 ## `this` in javascript anonymous function
 
@@ -71,7 +69,7 @@ However, in ES2015 arrow function, `this` is the lexical `this`.
 * `:nth-child(2n + 1)` is same as `:nth-child(odd)`
 * `:nth-child(2n)` is same as `:nth-child(even)`
 
-## `{this.props.children}` pass a react component to another 
+## `{this.props.children}` pass a react component to another
 
 ```js
 export default class Dumb extends React.Component {
@@ -122,13 +120,13 @@ Host *.example.two*
 ## `defer` & `async` in `<script>`
 
 * when `async` attribute is present, the script is fetched w/o blocking HTML parsing and executed as soon as it is available. While executing the HTML parsing will be blocked.
-* when `defer` attribute is present, w/o `async` the script will be fetched w/o blocking HTML parsing and only executed, when the page has finished parsing. 
+* when `defer` attribute is present, w/o `async` the script will be fetched w/o blocking HTML parsing and only executed, when the page has finished parsing.
 * without `async` or `defer`, the script is fetched blocking the HTML parsing and executed immediately.
 * When `async` and `defer` both are present `defer` serves as a fall back for the browsers that don't understand `async`.
 
 ## checkbox - intermediate state
 
-[intermediate state can only be set with javascript](https://css-tricks.com/indeterminate-checkboxes/) 
+[intermediate state can only be set with javascript](https://css-tricks.com/indeterminate-checkboxes/)
 
 ```js
 var checkbox = document.getElementById("some-checkbox");
@@ -139,7 +137,7 @@ checkbox.indeterminate = true;
 
 `patch < patch-file`
 
-for example 
+for example
 
 ```
 吽 echo hi\\nhello > 1.txt
@@ -147,13 +145,13 @@ for example
 吽 echo Hi\\nHello > 2.txt
 
 吽 diff -u 1.txt 2.txt > patch.txt
-[zsh] sabandyo at sabandyo-mn1 in ~ 
+[zsh] sabandyo at sabandyo-mn1 in ~
 
 吽 cat 1.txt
 hi
 hello
 
-吽 cat patch.txt 
+吽 cat patch.txt
 --- 1.txt	2016-03-24 18:56:38.000000000 -0700
 +++ 2.txt	2016-03-24 18:56:32.000000000 -0700
 @@ -1,2 +1,2 @@
@@ -162,10 +160,10 @@ hello
 +Hi
 +Hello
 
-吽 patch < patch.txt 
+吽 patch < patch.txt
 patching file 1.txt
 
-吽 cat 1.txt        
+吽 cat 1.txt
 Hi
 Hello
 ```
@@ -178,7 +176,7 @@ Hello
   * is not available in `POSIX shells`
   * is safer
   * use `#!/bin/bash` or `#!/bin/zsh` when using `[[`
-  
+
 * `[`
   * `var`s containing `spaces` nedds to be wrapped in `"`
 
