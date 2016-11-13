@@ -5,6 +5,7 @@ Today, I learned ...
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
+
 - [`this` in javascript anonymous function](#this-in-javascript-anonymous-function)
 - [`position:relative`](#positionrelative)
 - [`==` equality & value conversion in javascript](#-equality--value-conversion-in-javascript)
@@ -31,6 +32,7 @@ Today, I learned ...
 - [listen to `focus` and `blur` during capture phase](#listen-to-focus-and-blur-during-capture-phase)
 - [remove all the untracked files](#remove-all-the-untracked-files)
 - [element.closest()](#elementclosest)
+- [destructuring default param](#destructuring-default-param)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -318,3 +320,28 @@ Note the `true` flag passed as the 3rd argument, in the last statement. `true` i
 ## element.closest()
 
 Native [method](https://developer.mozilla.org/en-US/docs/Web/API/Element/closest), [not jQuery](https://api.jquery.com/closest/), that returns the closest ancestor of the current element.
+
+## destructuring default param
+
+```js
+function foobar({
+  foo = 'foo',
+  bar = 'bar'
+} = {}) {
+  console.log(foo);
+  console.log(bar);
+}
+
+foobar()
+// foo
+// bar
+
+foobar({
+  foo: 'oof',
+  bar: 'rab'
+})
+// oof
+// rab
+```
+
+refer [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment#ES6_version) for more information.
