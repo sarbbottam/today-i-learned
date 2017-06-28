@@ -33,6 +33,7 @@ Today, I learned ...
 - [remove all the untracked files](#remove-all-the-untracked-files)
 - [element.closest()](#elementclosest)
 - [destructuring default param](#destructuring-default-param)
+- [`Cannot find module 'internal/fs'`](#cannot-find-module-internalfs)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -345,3 +346,15 @@ foobar({
 ```
 
 refer [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment#ES6_version) for more information.
+
+## `Cannot find module 'internal/fs'`
+
+Fix `Cannot find module 'internal/fs'` error with `n` and `node >= 7`, like so
+
+```
+$ n 6
+$ npm i -g npm@next
+$ n latest
+```
+
+Source - [npm issue comment](https://github.com/npm/npm/issues/14232#issuecomment-256789098)
